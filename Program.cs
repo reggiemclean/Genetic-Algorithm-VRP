@@ -18,6 +18,7 @@ namespace Assignment1 {
 		{
 			population[,] ga_population;
 			ga_population = initPop(100);
+			int changeForGit = 0;
 			for (int gen = 1 ; gen < 100; gen++)
 			{
 				// apply genetic operators
