@@ -33,18 +33,7 @@ namespace Assignment1 {
                 // elitism
 				// new generation
 
-			}*/
-
-            List<int> check = new List<int>();
-            for (int y = 0; y < num_customers; y++)
-                check.Add(ga_population[y, 0]);
-            check.Sort();
-            foreach (int x in check)
-                Console.WriteLine(x);
-
-            Console.WriteLine("Number of elements in Check: " + check.Count);
-
-            
+			}*/           
             Console.ReadKey();
 		}
 
