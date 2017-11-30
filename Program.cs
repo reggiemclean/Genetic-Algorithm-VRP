@@ -7,7 +7,23 @@ using System.Threading.Tasks;
 
 namespace Assignment1 {
 
-  
+    class CustomerInfo
+    {
+        public int CustomerNumber { get; set; }
+        public int XCoordinate { get; set; }
+        public int YCoordinate { get; set; }
+        public int Demand { get; set; }
+        public int ReadyTime { get; set; }
+        public int DueDate { get; set; }
+        public int ServiceTime { get; set; }
+
+        public override string ToString()
+        {
+            return CustomerNumber + " " + XCoordinate + " " + YCoordinate + " " + Demand + " " + ReadyTime + " " + DueDate + " " + ServiceTime;
+        }
+    }
+
+    
     class Program {
 
         const int GA_POPSIZE = 100;
@@ -16,7 +32,7 @@ namespace Assignment1 {
         const double GA_MUTATIONRATE = 0.2;
         const double GA_CROSSOVERRATE = 0.9;
         const int num_customers = 101;
-
+        public static List<CustomerInfo> customerList = new List<CustomerInfo>();
         public int GlobalBestFitness = 999999999; // the global variable to keep track of the global best distance that has been found
         static void Main(string[] args)
         { 
@@ -33,7 +49,10 @@ namespace Assignment1 {
                 // elitism
 				// new generation
 
-			}*/           
+			}*/
+            ReadFile();
+            foreach (CustomerInfo x in customerList)
+                Console.WriteLine(x);
             Console.ReadKey();
 		}
 
@@ -93,6 +112,26 @@ namespace Assignment1 {
         static void TournamentSelection(int k = 2)
         {
 
+        }
+
+        static void ReadFile()
+        {
+            var lines = System.IO.File.ReadAllLines("C:\\Users\\Reggie\\Desktop\\data\\C101_200.csv");
+            foreach (string customer in lines)
+            {
+                var values = customer.Split(',');
+
+                customerList.Add(new CustomerInfo()
+                {
+                    CustomerNumber = Convert.ToInt32(values[0]),
+                    XCoordinate = Convert.ToInt32(values[1]),
+                    YCoordinate = Convert.ToInt32(values[2]),
+                    Demand = Convert.ToInt32(values[3]),
+                    ReadyTime = Convert.ToInt32(values[4]),
+                    DueDate = Convert.ToInt32(values[5]),
+                    ServiceTime = Convert.ToInt32(values[6])
+                });
+            }
         }
 	}
 }
