@@ -15,40 +15,72 @@ namespace Assignment1 {
         const double GA_ELITISMRATE = 0.1;
         const double GA_MUTATIONRATE = 0.2;
         const double GA_CROSSOVERRATE = 0.9;
+        const int num_customers = 101;
 
         public int GlobalBestFitness = 999999999; // the global variable to keep track of the global best distance that has been found
         static void Main(string[] args)
-		{
-
-            List<ReadInFile();
-            List<int> ga_population = new List<int>();
-            ga_population = InitPop(100);
-			for (int gen = 1 ; gen <= 100; gen++)
+        { 
+            int[,] ga_population = new int[num_customers, GA_POPSIZE];
+            ga_population = InitPop(GA_POPSIZE);
+            /*for (int gen = 1 ; gen <= 100; gen++)
 			{
                 // apply genetic operators
+                // do parent selection
                 // do crossover
                 OnePointCrossover(ga_population, 4);
 				// do mutation
 				// evaluate fitness of population individuals
-				// select new populations using some strategy
+                // elitism
+				// new generation
 
-			}
+			}*/
+
+            List<int> check = new List<int>();
+            for (int y = 0; y < num_customers; y++)
+                check.Add(ga_population[y, 0]);
+            check.Sort();
+            foreach (int x in check)
+                Console.WriteLine(x);
+
+            Console.WriteLine("Number of elements in Check: " + check.Count);
+
+            
+            Console.ReadKey();
 		}
 
-		static List<int> InitPop(int pop_size)
+		static int[,] InitPop(int pop_size)
 		{
-			List<int> init_population = new List<int>();
+            int[,] init_population = new int[num_customers, pop_size];
+            List<int> RandomNumbers = new List<int>();
+            Random rnd = new Random();
+            int customer = rnd.Next(1, num_customers + 1);
 			// do something to initialize the population
+            for (int x = 0; x < pop_size ; x++)
+            {
+                for (int y= 0; y < num_customers; y++)
+                {
+                    while (RandomNumbers.Contains(customer))
+                    {
+                        customer = rnd.Next(1, num_customers + 1);
+                    }
+                        init_population[y, x] = customer;
+                        RandomNumbers.Add(customer);
+                }
+                RandomNumbers.Clear();
+            }
 			return init_population;
 		}
 
         //One point crossover
-        static void OnePointCrossover(List<int> Parents, int IndexForCross)
+        static void OnePointCrossover (int IndexForCross, int [,] population)
 		{
 
             //*******************************************************************
-            List<int> NewChromosome = new List<int>(); // list that will contain the results of the crossover
-            List<int> TempChromosome = new List<int>(); // temporary list to contain original values of one parent for swap
+            for (int x = 0; x < num_customers; x++)
+            {
+
+
+            }
 
 
 
@@ -69,9 +101,8 @@ namespace Assignment1 {
             }
             return fitness;
         }
-        static void ReadInFile()
+        static void TournamentSelection(int k = 2)
         {
-
 
         }
 	}
