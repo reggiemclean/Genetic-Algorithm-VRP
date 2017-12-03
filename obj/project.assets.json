@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Reggie\\Desktop\\Assignment\\Genetic-Algorithm-VRP\\Assignment 1.csproj",
+      "projectUniqueName": "C:\\Users\\Reggie\\Desktop\\Genetic-Algorithm-VRP-master\\Assignment 1.csproj",
       "projectName": "Assignment 1",
-      "projectPath": "C:\\Users\\Reggie\\Desktop\\Assignment\\Genetic-Algorithm-VRP\\Assignment 1.csproj",
+      "projectPath": "C:\\Users\\Reggie\\Desktop\\Genetic-Algorithm-VRP-master\\Assignment 1.csproj",
       "packagesPath": "C:\\Users\\Reggie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Reggie\\Desktop\\Assignment\\Genetic-Algorithm-VRP\\obj\\",
+      "outputPath": "C:\\Users\\Reggie\\Desktop\\Genetic-Algorithm-VRP-master\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

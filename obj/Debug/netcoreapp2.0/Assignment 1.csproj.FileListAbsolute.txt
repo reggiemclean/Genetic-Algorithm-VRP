@@ -19,3 +19,14 @@ C:\Users\Reggie\Desktop\Assignment\Genetic-Algorithm-VRP\obj\Debug\netcoreapp2.0
 C:\Users\Reggie\Desktop\Assignment\Genetic-Algorithm-VRP\obj\Debug\netcoreapp2.0\Assignment 1.AssemblyInfo.cs
 C:\Users\Reggie\Desktop\Assignment\Genetic-Algorithm-VRP\obj\Debug\netcoreapp2.0\Assignment 1.dll
 C:\Users\Reggie\Desktop\Assignment\Genetic-Algorithm-VRP\obj\Debug\netcoreapp2.0\Assignment 1.pdb
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\bin\Debug\netcoreapp2.0\Assignment 1.deps.json
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\bin\Debug\netcoreapp2.0\Assignment 1.runtimeconfig.json
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\bin\Debug\netcoreapp2.0\Assignment 1.runtimeconfig.dev.json
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\bin\Debug\netcoreapp2.0\Assignment 1.dll
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\bin\Debug\netcoreapp2.0\Assignment 1.pdb
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\obj\Debug\netcoreapp2.0\Assignment 1.csprojResolveAssemblyReference.cache
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\obj\Debug\netcoreapp2.0\Assignment 1.csproj.CoreCompileInputs.cache
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\obj\Debug\netcoreapp2.0\Assignment 1.AssemblyInfoInputs.cache
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\obj\Debug\netcoreapp2.0\Assignment 1.AssemblyInfo.cs
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\obj\Debug\netcoreapp2.0\Assignment 1.dll
+C:\Users\Reggie\Desktop\Genetic-Algorithm-VRP-master\obj\Debug\netcoreapp2.0\Assignment 1.pdb
